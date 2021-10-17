@@ -1,0 +1,607 @@
+#Gamma#
+#X~Gamma(0.1,1), Y~Gamma(0.1,1)#
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rgamma(n,0.1,rate=1)
+ Y=rgamma(n,0.1,rate=1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Gamma(0.1,1), Y~Gamma(0.15,1)#
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rgamma(n,0.1,rate=1)
+ Y=rgamma(n,0.15,rate=1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Gamma(0.1,1), Y~Gamma(0.18,1)#
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rgamma(n,0.1,rate=1)
+ Y=rgamma(n,0.18,rate=1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+
+#X~Gamma(0.1,1), Y~Gamma(0.2,1)#
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rgamma(n,0.1,rate=1)
+ Y=rgamma(n,0.2,rate=1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Gamma(0.1,1), Y~Gamma(0.24,1)#
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rgamma(n,0.1,rate=1)
+ Y=rgamma(n,0.24,rate=1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Gamma(0.1,1), Y~Gamma(0.285,1)#
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rgamma(n,0.1,rate=1)
+ Y=rgamma(n,0.285,rate=1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Gamma(0.1,1), Y~Gamma(0.3,1)#
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rgamma(n,0.1,rate=1)
+ Y=rgamma(n,0.3,rate=1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Gamma(0.1,1), Y~Gamma(0.33,1)#
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rgamma(n,0.1,rate=1)
+ Y=rgamma(n,0.33,rate=1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Gamma(0.1,1), Y~Gamma(0.36,1)#
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rgamma(n,0.1,rate=1)
+ Y=rgamma(n,0.36,rate=1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+
+#X~Gamma(0.1,1), Y~Gamma(0.39,1)#
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rgamma(n,0.1,rate=1)
+ Y=rgamma(n,0.39,rate=1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+
+#X~Gamma(0.1,1), Y~Gamma(0.41,1)#
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rgamma(n,0.1,rate=1)
+ Y=rgamma(n,0.41,rate=1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Gamma(0.1,1), Y~Gamma(0.44,1)#
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rgamma(n,0.1,rate=1)
+ Y=rgamma(n,0.44,rate=1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Gamma(0.1,1), Y~Gamma(0.496,1)#
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rgamma(n,0.1,rate=1)
+ Y=rgamma(n,0.496,rate=1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+
+#X~Gamma(0.1,1), Y~Gamma(0.52,1)#
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rgamma(n,0.1,rate=1)
+ Y=rgamma(n,0.52,rate=1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Gamma(0.1,1), Y~Gamma(0.55,1)#
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rgamma(n,0.1,rate=1)
+ Y=rgamma(n,0.55,rate=1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Gamma(0.1,1), Y~Gamma(0.64,1)#
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rgamma(n,0.1,rate=1)
+ Y=rgamma(n,0.64,rate=1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Gamma(0.1,1), Y~Gamma(0.7,1)#
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rgamma(n,0.1,rate=1)
+ Y=rgamma(n,0.7,rate=1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Gamma(0.1,1), Y~Gamma(0.78,1)#
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rgamma(n,0.1,rate=1)
+ Y=rgamma(n,0.78,rate=1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Gamma(0.1,1), Y~Gamma(0.8,1)#
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rgamma(n,0.1,rate=1)
+ Y=rgamma(n,0.8,rate=1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Gamma(0.1,1), Y~Gamma(0.83,1)#
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rgamma(n,0.1,rate=1)
+ Y=rgamma(n,0.83,rate=1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+
+

@@ -1,0 +1,528 @@
+#Exponential Distribution# 
+#Equal means#
+set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rexp(n,rate=0.5)
+  Y=rexp(n,rate=0.5)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=5
+ U1=replicate(R,L(n))
+shapiro.test(U1)
+
+ set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rexp(n,rate=0.5)
+  Y=rexp(n,rate=0.5)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=10
+ U2=replicate(R,L(n))
+shapiro.test(U2)
+
+ set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rexp(n,rate=0.5)
+  Y=rexp(n,rate=0.5)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=15
+ U3=replicate(R,L(n))
+shapiro.test(U3)
+ 
+ set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rexp(n,rate=0.5)
+  Y=rexp(n,rate=0.5)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=20
+ U4=replicate(R,L(n))
+shapiro.test(U4)
+
+#Unequal means#
+set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rexp(n,rate=0.5)
+  Y=rexp(n,rate=0.25)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=5
+ U1=replicate(R,L(n))
+shapiro.test(U1)
+
+ set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rexp(n,rate=0.5)
+  Y=rexp(n,rate=0.25)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=10
+ U2=replicate(R,L(n))
+shapiro.test(U2)
+
+ set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rexp(n,rate=0.5)
+  Y=rexp(n,rate=0.25)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=15
+ U3=replicate(R,L(n))
+shapiro.test(U3)
+ 
+ set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rexp(n,rate=0.5)
+  Y=rexp(n,rate=0.25)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=20
+ U4=replicate(R,L(n))
+shapiro.test(U4)
+
+
+#Gamma Distribution#
+ 
+#Equal means#
+set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rgamma(n,0.1,rate=1)
+  Y=rgamma(n,0.1,rate=1)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=5
+ U1=replicate(R,L(n))
+shapiro.test(U1)
+
+ set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rgamma(n,0.1,rate=1)
+  Y=rgamma(n,0.1,rate=1)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=10
+ U2=replicate(R,L(n))
+shapiro.test(U2)
+
+ set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rgamma(n,0.1,rate=1)
+  Y=rgamma(n,0.1,rate=1)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=15
+ U3=replicate(R,L(n))
+shapiro.test(U3)
+ 
+ set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rgamma(n,0.1,rate=1)
+  Y=rgamma(n,0.1,rate=1)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=20
+ U4=replicate(R,L(n))
+shapiro.test(U4)
+
+#Unequal means#
+set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rgamma(n,0.1,rate=1)
+  Y=rgamma(n,0.44,rate=1)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=5
+ U1=replicate(R,L(n))
+shapiro.test(U1)
+
+ set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rgamma(n,0.1,rate=1)
+  Y=rgamma(n,0.44,rate=1)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=10
+ U2=replicate(R,L(n))
+shapiro.test(U2)
+
+ set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rgamma(n,0.1,rate=1)
+  Y=rgamma(n,0.44,rate=1)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=15
+ U3=replicate(R,L(n))
+shapiro.test(U3)
+ 
+ set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rgamma(n,0.1,rate=1)
+  Y=rgamma(n,0.44,rate=1)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=20
+ U4=replicate(R,L(n))
+shapiro.test(U4)
+
+#Beta Distribution#
+ 
+#Equal means#
+set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rbeta(n,0.1,1)
+  Y=rbeta(n,0.1,1)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=5
+ U1=replicate(R,L(n))
+shapiro.test(U1)
+
+ set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rbeta(n,0.1,1)
+  Y=rbeta(n,0.1,1)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=10
+ U2=replicate(R,L(n))
+shapiro.test(U2)
+
+ set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rbeta(n,0.1,1)
+  Y=rbeta(n,0.1,1)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=15
+ U3=replicate(R,L(n))
+shapiro.test(U3)
+ 
+ set.seed(1234)
+ R=100
+ L=function(n)
+ {
+ X=rbeta(n,0.1,1)
+  Y=rbeta(n,0.1,1)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=20
+ U4=replicate(R,L(n))
+shapiro.test(U4)
+
+#Unequal means#
+set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rbeta(n,0.1,1)
+  Y=rbeta(n,0.2,1)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=5
+ U1=replicate(R,L(n))
+shapiro.test(U1)
+
+ set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rbeta(n,0.1,1)
+  Y=rbeta(n,0.2,1)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=10
+ U2=replicate(R,L(n))
+shapiro.test(U2)
+
+ set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rbeta(n,0.1,1)
+  Y=rbeta(n,.2,1)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=15
+ U3=replicate(R,L(n))
+shapiro.test(U3)
+ 
+ set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rbeta(n,0.1,1)
+  Y=rbeta(n,.2,1)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=20
+ U4=replicate(R,L(n))
+shapiro.test(U4)
+
+#Normal Distribution#
+
+#Equal means#
+set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rnorm(n,0.1,1)
+  Y=rnorm(n,0.1,1)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=5
+ U1=replicate(R,L(n))
+shapiro.test(U1)
+
+ set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rnorm(n,0.1,1)
+  Y=rnorm(n,0.1,1)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=10
+ U2=replicate(R,L(n))
+shapiro.test(U2)
+
+ set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rnorm(n,0.1,1)
+  Y=rnorm(n,0.1,1)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=15
+ U3=replicate(R,L(n))
+shapiro.test(U3)
+ 
+ set.seed(1234)
+ R=100
+ L=function(n)
+ {
+ X=rnorm(n,0.1,1)
+  Y=rnorm(n,0.1,1)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=20
+ U4=replicate(R,L(n))
+shapiro.test(U4)
+ 
+#Unequal means#
+set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rnorm(n,0.1,1)
+  Y=rnorm(n,0.5,1)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=5
+ U1=replicate(R,L(n))
+shapiro.test(U1)
+
+ set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rnorm(n,0.1,1)
+  Y=rnorm(n,0.5,1)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=10
+ U2=replicate(R,L(n))
+shapiro.test(U2)
+
+ set.seed(1234)
+ R=100
+ L=function(n)
+ {
+  X=rnorm(n,0.1,1)
+  Y=rnorm(n,0.5,1)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=15
+ U3=replicate(R,L(n))
+shapiro.test(U3)
+ 
+ set.seed(1234)
+ R=100
+ L=function(n)
+ {
+ X=rnorm(n,0.1,1)
+  Y=rnorm(n,0.5,1)
+  S=c(X,Y)
+  r=rank(S)
+  W=sum(r[(n+1):(n+n)])
+  U=W-(n*(n+1)/2) 
+  U
+ }
+ n=20
+ U4=replicate(R,L(n))
+shapiro.test(U4)
+ 

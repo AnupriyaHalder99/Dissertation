@@ -1,0 +1,693 @@
+#Beta alpha#
+
+#X~Beta(0.1,1),Y~Beta(0.1,1)# 
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rbeta(n,0.1,1)
+ Y=rbeta(n,0.1,1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Beta(0.1,1),Y~Beta(0.13,1)# 
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rbeta(n,0.1,1)
+ Y=rbeta(n,0.13,1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Beta(0.1,1),Y~Beta(0.16,1)# 
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rbeta(n,0.1,1)
+ Y=rbeta(n,0.16,1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Beta(0.1,1),Y~Beta(0.21,1)# 
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rbeta(n,0.1,1)
+ Y=rbeta(n,0.21,1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Beta(0.1,1),Y~Beta(0.24,1)# 
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rbeta(n,0.1,1)
+ Y=rbeta(n,0.24,1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Beta(0.1,1),Y~Beta(0.27,1)# 
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rbeta(n,0.1,1)
+ Y=rbeta(n,0.27,1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Beta(0.1,1),Y~Beta(0.31,1)# 
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rbeta(n,0.1,1)
+ Y=rbeta(n,0.31,1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Beta(0.1,1),Y~Beta(0.35,1)# 
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rbeta(n,0.1,1)
+ Y=rbeta(n,0.35,1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Beta(0.1,1),Y~Beta(0.37,1)# 
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rbeta(n,0.1,1)
+ Y=rbeta(n,0.37,1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Beta(0.1,1),Y~Beta(0.42,1)# 
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rbeta(n,0.1,1)
+ Y=rbeta(n,0.42,1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Beta(0.1,1),Y~Beta(0.48,1)# 
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rbeta(n,0.1,1)
+ Y=rbeta(n,0.48,1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Beta(0.1,1),Y~Beta(0.534,1)# 
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rbeta(n,0.1,1)
+ Y=rbeta(n,0.534,1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Beta(0.1,1),Y~Beta(0.6,1)# 
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rbeta(n,0.1,1)
+ Y=rbeta(n,0.6,1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Beta(0.1,1),Y~Beta(0.667,1)# 
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rbeta(n,0.1,1)
+ Y=rbeta(n,0.667,1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Beta(0.1,1),Y~Beta(0.73,1)# 
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rbeta(n,0.1,1)
+ Y=rbeta(n,0.73,1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Beta(0.1,1),Y~Beta(0.775,1)# 
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rbeta(n,0.1,1)
+ Y=rbeta(n,0.775,1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Beta(0.1,1),Y~Beta(0.825,1)# 
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rbeta(n,0.1,1)
+ Y=rbeta(n,0.825,1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Beta(0.1,1),Y~Beta(0.85,1)# 
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rbeta(n,0.1,1)
+ Y=rbeta(n,0.85,1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Beta(0.1,1),Y~Beta(0.895,1)# 
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rbeta(n,0.1,1)
+ Y=rbeta(n,0.895,1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Beta(0.1,1),Y~Beta(0.911,1)# 
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rbeta(n,0.1,1)
+ Y=rbeta(n,0.911,1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Beta(0.1,1),Y~Beta(0.956,1)# 
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rbeta(n,0.1,1)
+ Y=rbeta(n,0.956,1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Beta(0.1,1),Y~Beta(1.05,1)# 
+n1=15
+n2=15
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rbeta(n,0.1,1)
+ Y=rbeta(n,1.05,1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=15
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+#X~Beta(0.1,1),Y~Beta(1.65,1)# 
+n1=20
+n2=20
+mu=(n1*n2)/2
+mu
+Var=(n1*n2*(n1+n2+1)/12)
+Var
+s=sqrt(Var)
+s
+U_alpha=qnorm(0.95,mu,s)
+U_alpha
+set.seed(1234)
+R=100000
+L=function(n)
+{
+ X=rbeta(n,0.1,1)
+ Y=rbeta(n,1.65,1)
+ S=c(X,Y)
+ r=rank(S)
+ W=sum(r[(n+1):(n+n)])
+ U=W-(n*(n+1)/2) 
+ U
+}
+n=20
+U=replicate(R,L(n))
+t=length(U[U>=U_alpha])
+t
+p=t/R
+p
+
+
